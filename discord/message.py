@@ -108,10 +108,10 @@ class Message:
     """
 
     __slots__ = [ 'edited_timestamp', 'timestamp', 'tts', 'content', 'channel',
-                  'mention_everyone', 'embeds', 'id', 'mentions', 'author',
+                  'mention_everyone', 'embeds', 'id', 'webhook_id', 'mentions',
                   'channel_mentions', 'server', '_raw_mentions', 'attachments',
                   '_clean_content', '_raw_channel_mentions', 'nonce', 'pinned',
-                  'role_mentions', '_raw_role_mentions', 'type', 'call',
+                  'role_mentions', '_raw_role_mentions', 'type', 'call', 'author',
                   '_system_content', 'reactions' ]
 
     def __init__(self, **kwargs):
