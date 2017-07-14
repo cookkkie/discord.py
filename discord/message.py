@@ -133,6 +133,7 @@ class Message:
         self.mention_everyone = data.get('mention_everyone')
         self.embeds = data.get('embeds')
         self.id = data.get('id')
+        self.webhook_id = data.get('webhook_id')
         self.channel = data.get('channel')
         self.author = User(**data.get('author', {}))
         self.nonce = data.get('nonce')
