@@ -241,8 +241,7 @@ class Server(Hashable):
                     member.status = Status(member.status)
                 except:
                     pass
-                game = presence.get('game', {})
-                member.game = Game(**game) if game else None
+                member.game = None
 
         if 'channels' in data:
             channels = data['channels']

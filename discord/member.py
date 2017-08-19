@@ -112,7 +112,7 @@ class Member(User):
         self.roles = kwargs.get('roles', [])
         self.status = Status.offline
         game = kwargs.get('game', {})
-        self.game = Game(**game) if game else None
+        self.game = None
         self.server = kwargs.get('server', None)
         self.nick = kwargs.get('nick', None)
 
